@@ -1,0 +1,195 @@
+# 1. Información del Taller
+site_name: Democratising CANSAT II. The Return
+site_description: This project of Club Robótica Granada , tries to make the CANSAT project accessible to the greatest number of members of the educational community and/or enthusiasts.
+site_author: Federico Coca
+site_url: https://clubroboticagranada.github.io/DemocratisingCANSAT2/
+
+# 2. Repositorio
+repo_name: DemocratisingCANSAT2
+repo_url: https://github.com/clubroboticagranada/DemocratisingCANSAT2
+edit_uri: ""
+
+# 3. Footer
+copyright: <a href="https://creativecommons.org/licenses/by-sa/4.0/"> Licensed under a Creative Commons Attribution Share Alike 4.0 License</a>
+extra:
+  # Footer - No poner que está hecho con MkDocs
+  generator: false
+  # Footer - Iconos
+  social:
+    - icon: fontawesome/brands/x-twitter 
+      link: https://x.com/clubroboticagra
+      name: X of Club Robótica Granada
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/clubroboticagranada
+      name: Instagram of Club Robotica Granada
+    - icon: fontawesome/brands/tiktok
+      link: https://www.tiktok.com/@club.robtica.gran
+      name: TikTok of Club Robotica Granada
+    - icon: fontawesome/brands/github
+      link: https://github.com/clubroboticagranada
+      name: Github of Club Robotica Granada
+
+# 4. Navegación
+nav:
+  - Democratising CANSAT II: index.md
+  - Control systems:
+    - Control systems: ControlSystems/cs.md
+    - CANSAT system elements:
+      - CANSAT parts: ControlSystems/parts.md
+      - Arduinoblocks software: ControlSystems/ab.md
+      - ESP32 SteaMakers. Control element: ControlSystems/sm.md
+      - OLED display. Connection and task: ControlSystems/oled.md
+      - BMP280. Connection and task: ControlSystems/bmp.md
+      - MPU6050. Connection and task: ControlSystems/giro.md
+      - DHT22. Connection and task: ControlSystems/dht.md
+      - GPS. Connection and task: ControlSystems/gps.md
+      - LoRa Module - LoRa Commands, Connection and task: ControlSystems/lora.md
+      - More about LoRa P2P communications: ControlSystems/morelora.md
+    - First LoRa communication:
+      - First LoRa communication: ControlSystems/first_lora_comm.md
+      - Wiring: ControlSystems/wiring.md
+      - JSON data programs (recommended): ControlSystems/jsondat.md
+      - Data processing with arduinoblocks: ControlSystems/data_proc_ab.md
+      - Programmes using CSV data: ControlSystems/csvdat.md
+      - Processing csv data: ControlSystems/procc_csv.md
+    - Now CANSAT: ControlSystems/now.md
+    - Power and consumption: ControlSystems/power.md
+  - 3D structure: 
+    - 3D structure by VegaSteam: 3D/3dv.md
+    - 3D structure by Pablo Moraga: 3D/3dpm.md
+    - 3D structure by Club Robotica Granada: 3D/3dcrg.md
+  - Parachute: 
+    - Parachute: Parachute/Parachute.md
+    - Radio Calculation: Parachute/radius.md
+    - Gores layout (parts): Parachute/gores.md
+  - More about CANSAT: more.md
+  - Didactic guide: guide.md
+  - Photos and Videos: media.md
+  - Sources: scr.md
+  # Aqui todas las entradas
+
+#- Ayuda:
+    #- Chuleta: ayuda/ayuda.md
+    #- Chuleta de Markdown: ayuda/markdown.md
+    #- Chuleta de Material Design: ayuda/material.md
+
+  - Credits:
+    - Credits: Miscelanea/credits.md 
+    - Licence: Miscelanea/lic.md
+
+# 5. Google Analytics
+#google_analytics:
+#  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+#  - auto
+
+# 6. Configuración del tema
+theme:
+  name: material
+  # Color - Fuentes - Lenguaje
+  palette:
+    # Light Mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/lightbulb
+        name: Modo Oscuro
+      primary: light blue
+      accent: deep purple 
+    # Dark Mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/lightbulb-outline
+        name: Modo Claro
+      primary: light blue
+      accent: deep purple
+  # Fuente
+  font:
+    text: Roboto 
+    code: Roboto Mono 
+  # Lenguage
+  language: en
+  logo: img/favicon.png 
+  favicon: img/favicon.png 
+  # Icono del repo
+  icon:
+    repo: fontawesome/brands/github
+  # Pestañas de navegación
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky #pestañas fijas
+# Caracteristicas especiales
+features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    # Experimental
+    - search.suggest
+    - search.highlight
+    - search.share
+
+# 7. Extensiones
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      linenums: true
+      linenums_style: pymdownx-inline
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+# 8. Necesario para la extensión pydownx.arithmatex
+extra_javascript:
+  - plugins/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# 9. Plugins
+plugins:
+  - search:
+      lang: es
+      separator: '[\s\-,:!=\[\]()"/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: "100%"
+      height: auto
+      zoomable: true
+      draggable: true
+      auto_caption: false
+      caption_position: bottom
