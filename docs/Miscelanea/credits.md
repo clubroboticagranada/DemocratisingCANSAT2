@@ -1,5 +1,7 @@
 
-The documentation has been developed by Pedro Ruiz, being tested and put into practice by José Luis Bueno and several CANSAT teams with which the Granada Robotics Club collaborates.
+The original documentation has been developed by Pedro Ruiz, being tested and put into practice by José Luis Bueno and several CANSAT teams with which the Granada Robotics Club collaborates.
+
+==**This website is a translation and adaptation of the original by Federico Coca.**==
 
 * Arduinoblocks: software on which the whole project is based, with improvements developed by Juanjo López.
 * Corrections and extension of documentation on LoRa communications by Jose María Fernández.
