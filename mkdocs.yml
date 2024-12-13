@@ -62,6 +62,7 @@ nav:
     - Parachute: Parachute/Parachute.md
     - Radio Calculation: Parachute/radius.md
     - Gores layout (parts): Parachute/gores.md
+  - Cansat Express training panel: panel/express.md
   - More about CANSAT: more.md
   - Didactic guide: guide.md
   - Photos and Videos: media.md
